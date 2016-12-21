@@ -1,8 +1,10 @@
 language: node_js
 node_js:
   - '6'
-cache: yarn
+before_script:
+  - yarn add --dev coveralls
 script:
   - npm run lint
-  - npm test
+  - npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
   - npm run test-storybook
+cache: yarn
