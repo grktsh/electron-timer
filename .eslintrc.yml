@@ -1,0 +1,21 @@
+root: true
+extends: airbnb
+parser: babel-eslint
+env:
+  browser: true
+rules:
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+        - '**/DevTools.js'
+        - '**/.storybook/*.js'
+        - '**/__stories__/*.js'
+        - '**/__tests__/*.js'
+        - '**/*.dev.js'
+        - '**/webpack.config.*.js'
+      optionalDependencies: false
+  react/jsx-filename-extension:
+    - error
+    - extensions:
+        - .js
+        - .jsx
