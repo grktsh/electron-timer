@@ -1,0 +1,132 @@
+exports[`Storyshots ActionBar default 1`] = `
+<div>
+  <button
+    className=""
+    data-react-toolbox="button"
+    disabled={false}
+    href={undefined}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+    type="button">
+    Reset
+  </button>
+  <button
+    className=""
+    data-react-toolbox="button"
+    disabled={false}
+    href={undefined}
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchStart={[Function]}
+    type="button">
+    Start
+  </button>
+</div>
+`;
+
+exports[`Storyshots App default 1`] = `
+<div>
+  <h1>
+    00:00:00.000
+  </h1>
+  <div>
+    <button
+      className=""
+      data-react-toolbox="button"
+      disabled={false}
+      href={undefined}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchStart={[Function]}
+      type="button">
+      Reset
+    </button>
+    <button
+      className=""
+      data-react-toolbox="button"
+      disabled={false}
+      href={undefined}
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchStart={[Function]}
+      type="button">
+      Start
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button accent 1`] = `
+<button
+  className=""
+  data-react-toolbox="button"
+  disabled={false}
+  href={undefined}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchStart={[Function]}
+  type="button">
+  Accent
+</button>
+`;
+
+exports[`Storyshots Button default 1`] = `
+<button
+  className=""
+  data-react-toolbox="button"
+  disabled={false}
+  href={undefined}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchStart={[Function]}
+  type="button">
+  Default
+</button>
+`;
+
+exports[`Storyshots Button disabled 1`] = `
+<button
+  className=""
+  data-react-toolbox="button"
+  disabled={true}
+  href={undefined}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchStart={[Function]}
+  type="button">
+  Disabled
+</button>
+`;
+
+exports[`Storyshots Button primary 1`] = `
+<button
+  className=""
+  data-react-toolbox="button"
+  disabled={false}
+  href={undefined}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchStart={[Function]}
+  type="button">
+  Primary
+</button>
+`;
+
+exports[`Storyshots Time default 1`] = `
+<h1>
+  01:02:03.456
+</h1>
+`;
