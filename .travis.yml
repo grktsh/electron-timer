@@ -10,9 +10,10 @@ before_script:
   - yarn add --dev coveralls
 script:
   - npm run lint
-  - npm run test-storybook &&
-    npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls &&
-    npm run build
+  - npm run test-storybook
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm test; fi
+  - npm run build
 after_success:
   - npm run package
 cache:
