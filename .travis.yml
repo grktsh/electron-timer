@@ -12,8 +12,9 @@ script:
   - npm run lint
   - npm run test-storybook &&
     npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls &&
-    npm run build &&
-    npm run package
+    npm run build
+after_success:
+  - npm run package
 cache:
   yarn: true
   directories:
