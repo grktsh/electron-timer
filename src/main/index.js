@@ -1,5 +1,6 @@
 import path from 'path';
 import url from 'url';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserWindow, app } from 'electron';
 
 // Keep a global reference of the window object, if you don't, the window will

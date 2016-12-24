@@ -1,3 +1,8 @@
+os:
+  - linux
+  - osx
+sudo: false
+dist: trusty
 language: node_js
 node_js:
   - '6'
@@ -5,6 +10,17 @@ before_script:
   - yarn add --dev coveralls
 script:
   - npm run lint
-  - npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
-  - npm run test-storybook
-cache: yarn
+  - npm run test-storybook &&
+    npm test -- --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls &&
+    npm run build &&
+    npm run package
+cache:
+  yarn: true
+  directories:
+    - $HOME/.electron
+addons:
+  apt:
+    packages:
+      - icnsutils
+      - graphicsmagick
+      - xz-utils
