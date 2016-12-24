@@ -1,9 +1,13 @@
 {
   "name": "electron-timer",
   "version": "0.1.0",
-  "main": "index.js",
+  "description": "A timer app built on Electron",
+  "homepage": "https://github.com/grktsh/electron-timer",
   "license": "MIT",
+  "author": "grktsh <grktsh@gmail.com>",
+  "main": "index.js",
   "scripts": {
+    "package": "build",
     "build": "run-p build:*",
     "build:main": "cross-env NODE_ENV=production webpack -p --config webpack.config.main.babel.js",
     "build:renderer": "cross-env NODE_ENV=production webpack -p --config webpack.config.renderer.babel.js",
@@ -15,20 +19,7 @@
     "storybook": "start-storybook -p 9001",
     "test-storybook": "storyshots"
   },
-  "jest": {
-    "testRegex": "/__tests__/.*\\.test\\.jsx?$",
-    "moduleNameMapper": {
-      "\\.css$": "identity-obj-proxy"
-    },
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!**/__{stories,tests}__/**",
-      "!**/*.dev.js",
-      "!**/DevTools.js"
-    ]
-  },
   "dependencies": {
-    "electron": "^1.4.13",
     "immutability-helper": "^2.0.0",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "~15.4.0",
@@ -52,6 +43,8 @@
     "babel-register": "^6.18.0",
     "cross-env": "^3.1.3",
     "css-loader": "^0.26.1",
+    "electron": "^1.4.13",
+    "electron-builder": "^10.9.3",
     "enzyme": "^2.6.0",
     "eslint": "^3.9.1",
     "eslint-config-airbnb": "^13.0.0",
@@ -72,5 +65,26 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0-rc",
     "webpack-dev-server": "^2.2.0-rc"
+  },
+  "build": {
+    "appId": "com.github.grktsh.electron-timer",
+    "productName": "Electron Timer",
+    "files": [
+      "app/**/*",
+      "index.js",
+      "package.json"
+    ]
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*\\.test\\.jsx?$",
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/__{stories,tests}__/**",
+      "!**/*.dev.js",
+      "!**/DevTools.js"
+    ]
   }
 }

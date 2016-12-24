@@ -5,3 +5,4 @@ npm-debug.log
 /app/renderer.js
 
 /coverage/
+/dist/
