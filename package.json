@@ -81,6 +81,7 @@
     },
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
+      "!src/{main,renderer}/index.js",
       "!**/__{stories,tests}__/**",
       "!**/*.dev.js",
       "!**/DevTools.js"
