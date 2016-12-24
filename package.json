@@ -1,6 +1,6 @@
 {
   "name": "electron-timer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A timer app built on Electron",
   "homepage": "https://github.com/grktsh/electron-timer",
   "license": "MIT",
